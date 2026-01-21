@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>美团外卖全店铺小程序直达</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: "微软雅黑", sans-serif; background: #f5f5f5; padding: 16px; }
+        .container { max-width: 600px; margin: 0 auto; }
+        .title { text-align: center; font-size: 24px; color: #ff4d4f; margin: 20px 0; font-weight: bold; }
+        .province { margin-bottom: 24px; background: #fff; border-radius: 12px; padding: 16px; box-shadow: 0 2px 10px rgba(0,0,0,0.06); }
+        .province-name { font-size: 18px; color: #333; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #ff4d4f; display: flex; align-items: center; gap: 8px; }
+        .province-name::before { content: "📍"; }
+        .shop-list { display: flex; flex-direction: column; gap: 10px; }
+        .shop-item { padding: 12px 16px; background: #fafafa; border-radius: 8px; border-left: 4px solid #ff4d4f; transition: all 0.2s ease; }
+        .shop-item:hover { background: #fff5f5; transform: translateX(3px); }
+        .shop-link { text-decoration: none; color: #333; font-size: 15px; display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+        .tip { text-align: center; color: #666; font-size: 14px; margin: 20px 0; line-height: 1.8; background: #fff; padding: 12px; border-radius: 8px; }
+        .highlight { color: #ff4d4f; font-weight: 600; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">美团外卖全店铺小程序一键直达</h1>
+
+        <!-- 广东省 -->
+        <div class="province">
+            <h2 class="province-name">广东省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=sjlNEco5GqisB6483sSgUQI" class="shop-link">嘴馋美蛙鱼头(龙江店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Rjx4uLdLSwziDE663WcVqQI" class="shop-link">滋味东北水饺</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=L6Plo4PvtKzI5NZg-WqobQI" class="shop-link">重庆小面（钟屋大门店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=hBKdhBxgD71z1CJ_kTfWLgI" class="shop-link">重庆小面（粉面•东久柏曼酒店店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=nck62KpYes1XtnbKv9IP9gI" class="shop-link">钟意港式烧腊快餐店（江北佳兆业店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=vlJMgLFhlrSiI5FcFSol2QI" class="shop-link">正果云吞（罗湖佳宁娜店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=jUe_uJMpH5eGU66gKGrD6AI" class="shop-link">营地烧烤（乌石头路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=NwB_odozghkza7jPg5LXVwI" class="shop-link">约森·天山羊肉煲·羊蝎子火锅(第二档口蜀食香餐饮美食城店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=_c5ypAyrVdOkFtWyTJboRwI" class="shop-link">香小诺过桥米线（云南米线·特色小吃·益田假日天地四楼店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=8VZ0x6vgSHJ23iVXKa7NFwI" class="shop-link">相记石磨肠粉（成兴路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=gvD1xKTrO4ekUdaGQPqT1QI" class="shop-link">寻味牛骨火锅小龙虾</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=mfdqIYQR5wJmmt4vAOHD6AI" class="shop-link">寻甲记•湖南民间菜（景田店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=O77pHBfRlTrWhftCnzht9gI" class="shop-link">生烫牛肉米线馄饨（三餐半餐饮）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=loCkP-Bu82bDqp-Iti_qZAI" class="shop-link">深记肠粉店(南湾店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=9OtQR5ahpTP3mQiq8cbDugI" class="shop-link">日常焙咖（咖啡·甜品）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=bxoW9rY3rFzPJ218KjLLTQI" class="shop-link">钱记钱果·绿豆饼（国贸分店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=bNeKD_U4Kdr_GptWiuG9MgI" class="shop-link">沙县小吃（新村一巷店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ufe9fORQclnAgVFChf7TsAI" class="shop-link">朴大碗泡面·小吃（大运店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=dr7FY5Rgv_ajPvf_JnIZ5AI" class="shop-link">牛小燃原切牛排·意面·简餐(爱联店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=1-0XwqoGge2EhtW055ONlQI" class="shop-link">牛全宴潮汕牛肉（牛肉粿条、火锅）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=BoXZLNSx9Eb1soIGukGa7AI" class="shop-link">社区咖啡（南香店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=K_6p02Ej6oQzOsFmGlwNBwI" class="shop-link">兴粮品汤包（手工包·七小店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=vWY2cflHBkVDJnwBScpINAI" class="shop-link">鲜味皇锡纸花甲粉（茂名店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=W2NdrpXuvUB2BJ5DbUZgKQI" class="shop-link">鲜汤厨娘·丝瓜豆腐汤·酱大骨</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=sQm7km_8AcwvlNWKVG4TXAI" class="shop-link">汤来运转（炖汤·花胶甜品）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=lK62BBxhZ5doNe1grneRzwI" class="shop-link">仙果喔(奶昔.饮品.万泰汇店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=uWJ7VUKQ7rbwVji6W6FQcAI" class="shop-link">我叔我婶·现烤窑鸡（普宁店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=2onBqe3c5K4S8y9LsaKBEwI" class="shop-link">小樂面包(生日蛋糕·甜品·麦地店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=1ZBQPFM1ivc26GHPs84zZgI" class="shop-link">汤爷爷.排骨汤.鸡汤（汤饭馆）</a></div>
+            </div>
+        </div>
+
+        <!-- 四川省 -->
+        <div class="province">
+            <h2 class="province-name">四川省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=4y0SrnlCn_EyaBnSZQ0ghAI" class="shop-link">煮小篓·火锅冒菜·麻辣烫</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=kw1-XZdiJXawstp85pY_4QI" class="shop-link">重庆肥肠芋儿鸡</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=x9D6PZ0uLP2aX8cYMrDdCAI" class="shop-link">正宗万州烤鱼（西昌店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ozwSbPBvqjyaIHH_fhobTgI" class="shop-link">杨胖子水城羊肉米线·特色鱼米线</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=9TFa_k24ftzr2UrGMra-PgI" class="shop-link">杨老头烧烤</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=5uNL7x3-QTSgYFx6kgsxmAI" class="shop-link">云南鲜烫吊龙米线</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=dcDsATbdfl-6uxpX6dYPTAI" class="shop-link">月上茶颜</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=yuEr8v4ZJyVOeFkJAPO6mgI" class="shop-link">一家多次获奖的炒饭·炒面·炒河粉·左撇子（南岸店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=msnnlrR9bJoXtVFWVZ0uAAI" class="shop-link">四季糖水铺（老城区店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=McXNMl3JMJQJC-U_k3F2HQI" class="shop-link">小馋猫·烤肉拌饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=EiCv0SPP194BgwDTUeV3tQI" class="shop-link">星月社区食堂(川菜·江湖菜)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=JPD4-7wF-RWP0wqowO_diAI" class="shop-link">鑫园饼屋（学府街店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=gjho8muXXK4oE6SzZg_dlQI" class="shop-link">奶百香(匡时街店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=_IEwMoQJpgs013A6FQUg9wI" class="shop-link">玉米姑娘(八二小区店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=0vplbrWANaD2nt7igzrbIAI" class="shop-link">牛马火锅粉</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=L0GNEgsLSXUBLWa90UTAFwI" class="shop-link">切果NOW（泸州万象汇店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=TOxPHd_bhcVa-y085xQKOgI" class="shop-link">农民豆花饭（陈家桥店）</a></div>
+            </div>
+        </div>
+
+        <!-- 上海市 -->
+        <div class="province">
+            <h2 class="province-name">上海市</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6zqHc1JSs84PczdbXbz7wgI" class="shop-link">周大海牛肉汤(川沙百联店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=JEHoXd70_CFuIfybSqguMAI" class="shop-link">重庆鸡公煲（淞南路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=AQLq5K3BETc3EerZYdHRggI" class="shop-link">正宗牛肉煎包（塘桥店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=hmVgY-9vjQk_uWRSgEgkqwI" class="shop-link">张记油条（昌化菜市场店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=MD83r9Y3woYwZR8mfjB0MwI" class="shop-link">贼上瘾东北铁锅炖猪肉粉条(梅岭路店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=1ZGz2eaoj8oAsgdUpmNLCAI" class="shop-link">徐老味</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=x3XpUY32U8yONoVKv2oK1QI" class="shop-link">宋二爷江西土菜馆</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ABR4xcOARcCsZnCueDsANgI" class="shop-link">四季食鲜·海鲜·宁波小馆</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=fDiALX2yWKdyJCPDsIBjbwI" class="shop-link">蜀一数二砂锅串串（新川路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=QXlvFtbGZxSieaMN9FsNuAI" class="shop-link">小齐海鲜（齐家花园分店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Inaw4Xkvsir6eww-U_HnkgI" class="shop-link">小聚生活鸡公煲纸包鱼烤鱼</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=e7WkSBc_HULRIlAaXt0oHwI" class="shop-link">文虎酱鸭（闻喜路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=3wW388IkWZUUrmctV2PHjQI" class="shop-link">橋邊排骨（青一美食城店）</a></div>
+            </div>
+        </div>
+
+        <!-- 北京市 -->
+        <div class="province">
+            <h2 class="province-name">北京市</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=9UVkxTfINHQcDnPAkkVLuAI" class="shop-link">院落烤鸭·新京菜（地安门店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=9XdqE6iEp9Jjyo5uYTBd7wI" class="shop-link">壹品烧烤坊</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=YyvB4d0rpOeo_yqL0VxpxQI" class="shop-link">羊圈儿·羊棒骨·羊蝎子（火锅）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=1wVeE230L2z88HDTSVc20QI" class="shop-link">羊棒骨烩面</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=3qRBMm4MLM8Em0GUMtVwAAI" class="shop-link">许三两鲜炒鸡(风味01店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=eimPMik_JNLoibYPUAKy9AI" class="shop-link">皖阜乡味新徽菜（风味01店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=IldkG1JBQ9P_4Uz8m9yypwI" class="shop-link">万两财莽·菜莽专门店（百子湾店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ZPV5vkziboknSPdvmrpZhQI" class="shop-link">铁锅焖面（大悦城美食城第05档口）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Kmppt4WFYEhNTRo7-8baugI" class="shop-link">酸友记酸汤火锅</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ZTXGqJtkCs8O7qS1AA9RjAI" class="shop-link">尚雅花艺鲜花店</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=XD9r49A6zjc42RvzoiJh1gI" class="shop-link">胖娃麻辣烫</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=H8FSyreH3e_h3jMh0f_I8gI" class="shop-link">喏町咖啡NODDIN COFFEE（丰台金唐店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=N348LNz_UeO2yFvIQZmMzwI" class="shop-link">楠家巷·冒菜（第1风味楠家巷·冒菜）</a></div>
+            </div>
+        </div>
+
+        <!-- 河北省 -->
+        <div class="province">
+            <h2 class="province-name">河北省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Iy18m8mQFCPkRrvYMvhAswI" class="shop-link">张三凉皮（砂锅米线·烧饼·肉夹馍）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=BE4SslJCtFNLLXAMGNQFIwI" class="shop-link">张老师毛血旺</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=nxCLDcXmESx0sEr1oNLTiwI" class="shop-link">野泡泡葱花饼·鸡汤馄饨·现炒菜（友谊路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=KekJix63MqpHJAHKiXkOTAI" class="shop-link">天津刘姥爷包子铺（鸭油包）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=tUFTQNAO6E5Fbyotk32e2QI" class="shop-link">生滚鲜切牛肉汤饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ihvNxbrc-YnyhP-kUzG01QI" class="shop-link">王美飞茶餐厅（丛台店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=u6ztqr3SZS0dDGnRa4xr1QI" class="shop-link">炭烧牛蛙·鸡爪煲是一绝（邯山万达店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=pKICtDOTiVsMGqcCUr5FpQI" class="shop-link">泡面达人馆（邯郸店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=SH5wYAtnU3YCg-CZhWXL9QI" class="shop-link">蹄花礼•麻辣猪蹄排骨锅</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=s0QHYxUl7TaHR21FxFfQswI" class="shop-link">申掌柜掉渣饼·热干面</a></div>
+            </div>
+        </div>
+
+        <!-- 河南省 -->
+        <div class="province">
+            <h2 class="province-name">河南省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=7h14sS4cQLqiPW37lK9JzwI" class="shop-link">众记西安泡馍</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=0cQ1O0-pcCqHClvTDJr_LwI" class="shop-link">鑫川香麻辣香锅（长葛店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=03tXZOgW_aSFJ9S2M_k9iwI" class="shop-link">田哥麻辣烫(璀璨天街美食广场店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=kKwxoZKyGPjzG-9duzzR_wI" class="shop-link">陕西擀面皮肉夹馍</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Bo3Tpci4IXvbrw1bs253QQI" class="shop-link">山海烘焙（新世界百货店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=TbqcQ6vaX2DI_N5DBm_0nQI" class="shop-link">俏三妮东北手工水饺</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=cyw81_7043he8T9YZ4xijwI" class="shop-link">慕巴夫鲜花主题蛋糕（义乌城店）</a></div>
+            </div>
+        </div>
+
+        <!-- 浙江省 -->
+        <div class="province">
+            <h2 class="province-name">浙江省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=K3pPyVREXUBCycqMzspPjgI" class="shop-link">月城粥铺（水饺·锅贴）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Q3r-3RWIpDKmyM0GsM5GCQI" class="shop-link">蟹黄逅.满黄红膏大闸蟹</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=qSXg0HLH7Wzt0ihzun8RDwI" class="shop-link">榆林炸鸡腿（红星嘉园店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=BhvtoDn6hzOV_h_Cj0HaoAI" class="shop-link">新疆兄弟烧烤</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=T1x1m1u_1VVNACovwJgVNgI" class="shop-link">新疆美味羊肉串（兴建路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=EiCv0SPP194BgwDTUeV3tQI" class="shop-link">星月社区食堂(川菜·江湖菜)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=fOZYRQG6hIBbkoa1-ijCPAI" class="shop-link">汐海岸·海肠捞饭（宁波北仑店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=EIvmKFjcKzTikI0ePCfF1wI" class="shop-link">喜点皇肉包</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=bsHBAlz0VHEXYf9Yedb-fwI" class="shop-link">三头一掌一臭（臭豆腐，卤味）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=IvV4zYIyHaKL8LpITpQ9iAI" class="shop-link">三衢人家（西湖店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=eUWWYHzcIRQhQdDhfag0cwI" class="shop-link">天天炸串铺（小吃、宝龙店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=RcMRdnv3vL_V3MJMSEDjJQI" class="shop-link">一朵艺咖【咖啡.轻食.望湖路店】</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=aPMxo6F7WSvU7SsbZGih1AI" class="shop-link">衢州饭店</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=M7WTgTpFyaltWMrLkGvxLgI" class="shop-link">南京老鸭粉丝汤（下沙店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6BZ9ZqIHBw5u27IsXo-vgAI" class="shop-link">七创兔·掌门炸鸡(上虞舜杰路店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=t0N0rtIEWQhYE26efRonIQI" class="shop-link">沙县小吃(上峰食集店)</a></div>
+            </div>
+        </div>
+
+        <!-- 陕西省 -->
+        <div class="province">
+            <h2 class="province-name">陕西省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=H8PwXZkm4ptt9mlh_axBvgI" class="shop-link">珍九九辣卤（咸阳店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=24_AL6Sbkr4GAUsjFjPkcgI" class="shop-link">源宝·杂粮煎饼</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=HaajwkEAVWY_la3dQlqPSQI" class="shop-link">渔魜码头</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=QpbH5jcPqJpN6GEu2fmFFQI" class="shop-link">台湾丽山炸鸡茶铺</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=sd-e-ycOFDYyDP1T08FUgQI" class="shop-link">湘乡乡（盖码饭·湘菜·群贤路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=MXyXXO0ZkJL4ZYFUp5KNoAI" class="shop-link">肉多多牛腩拌饭</a></div>
+            </div>
+        </div>
+
+        <!-- 云南省 -->
+        <div class="province">
+            <h2 class="province-name">云南省</h2>
+            <div class="shop-list">
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=HlnB_yLv0kgJhdu4AnpYJwI" class="shop-link">云山竹·普洱菜（老街店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=_v_VNhs7klbmPTQrTaYzZQI" class="shop-link">小白蔡饭店</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=O59Uhu6XY_gRUrEDVSzSJwI" class="shop-link">香满屋粉面馆</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=p-ljDchlwtj7skXptQLipAI" class="shop-link">陶小厨盖码饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6Gvn20bxU-NR_5gJaXsZbwI" class="shop-link">甩碗鲜烫黄牛肉米线</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=L7Y1yIyBSyVoXfPS2kEO7QI" class="shop-link">书亦烧仙草（西山爱琴海店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=fO226jIMhSOPgs1QlEBXHQI" class="shop-link">黔糖日记·冰糖葫芦·厚切酸奶</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=deMjCW1G2GR945vkvAmwrQI" class="shop-link">七个呱•礼盒•果篮•果切（高新店）</a></div>
+            </div>
+        </div>
+
+        <!-- 其他省份（整合剩余店铺） -->
+        <div class="province">
+            <h2 class="province-name">其他省份</h2>
+            <div class="shop-list">
+                <!-- 重庆市 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6JH0eZgGd5KbEpdrDBna_AI" class="shop-link">沾水蹄花养生汤（乌鸡汤饭·排骨汤饭·鸽子汤饭）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=W-42Y2v0CXwdZwPw8Yr95AI" class="shop-link">向记甜品（糖水·烤梨·柠檬茶）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=nfl-nmUv1o4-n0MsDvhgdwI" class="shop-link">伍师兄家常菜</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6PqWincdjfPpM1mBOMckeQI" class="shop-link">舒二妹旺源餐馆</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=mTP0CbcKnmvAE99yDcMjzQI" class="shop-link">鲜肉面（米线、抄手原杨门将面）</a></div>
+                <!-- 湖北省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=7pGOIRO2QX4JzM0OvgaGbQI" class="shop-link">张记地锅鸡·美蛙鱼（秭归店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=6qJv_FNjaMQFrnxP9FoSTAI" class="shop-link">沂蒙山炒鸡·深山走地鸡(建始店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=vxbDLhqSQid0p_cc_nm-ZgI" class="shop-link">小灶台·够烫·够味·够下饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=fk0nSaTjsm5v4lqrBjXzvQI" class="shop-link">王炸牛腩饭（泛海店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=8D5i6NdauqMZwOKDveZzcgI" class="shop-link">湘西小吃店（烤串）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=DiaUN8ZWtcHFqiAF_nVoWgI" class="shop-link">七个包包（包子•发糕•早餐）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=w60a9v2VG79Oyh1-3CaYggI" class="shop-link">然妈私房馄饨</a></div>
+                <!-- 湖南省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=L8aKS1GXZMcQ5MWzSWFzqwI" class="shop-link">蒸鲜生</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=p6xJBWf8XvqMneWsZM1ApwI" class="shop-link">享乐达·牛肉汉堡比萨（火车站店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=u-fKgaW7rQBrywPYvr9f2wI" class="shop-link">爷爷不泡茶（衡阳酃湖万达广场店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Ja29vXm2O1paUQxqjXF0YwI" class="shop-link">书亦烧仙草（崇业广场店）</a></div>
+                <!-- 福建省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=4sinlESkhjP5HGAgS1H7LAI" class="shop-link">早阳肉包(旧铺新村店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=hnIuBWqSsJi5wFmAcFTRFAI" class="shop-link">一刻出炉·烧鹅传奇（烧腊套餐·厦门店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=TKtP_1UPwO33If1tv2-RhgI" class="shop-link">喜小韩延边石锅拌饭（星河店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=iuKQU65SMstnlfFqHb9BcwI" class="shop-link">上官煲仔饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=xPi_bYIk3K2m6oM-T6N4NQI" class="shop-link">沙县小吃(围里社348号店)</a></div>
+                <!-- 山东省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=p2VwylUGeZeiOXoiW9jQJwI" class="shop-link">元掌隆.隆江猪脚饭（诸城店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=yjXXsqOlxTnDusSV-R_L4gI" class="shop-link">爷爷不泡茶（潍坊诸城市百盛店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=PYyEmrly9iJWBHa1P4fShQI" class="shop-link">爷爷不泡茶（济南西城龙湖天街店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=kK9w-T6OUddb_VYRTWCGwAI" class="shop-link">于小贝挪威保真三文鱼（聊城店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=7EK765KD_3qGHmseoMPEwAI" class="shop-link">日落的甜情趣用品店</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=gf9DyZQr1_-NOqTo0ifZTQI" class="shop-link">树洞熊奶茶（咖啡果茶）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=L6PGSKay8mRS6-L4tPTdYgI" class="shop-link">胖胖·热卤猪脚饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=2AJbym_xLiZFcY3bwNc78gI" class="shop-link">穆清斋兰州牛肉拉面</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=VfUPqtTDiWZWlrhgR79mJgI" class="shop-link">幸运咖（幸福街店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=FAhvtpImtOoFEndkvyRpyQI" class="shop-link">幸运咖（鑫城店）</a></div>
+                <!-- 广西壮族自治区 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=duc3TwLUXyADd2aFnH753AI" class="shop-link">爷爷不泡茶（柳州鹿寨文化广场店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=lJZNk3HyXJuHZXDHg7-4SgI" class="shop-link">拾山菌·云南野生菌炒饭·炖肉盖饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=wUVrwufQAzUM-PKxclqFpAI" class="shop-link">拾柒酸嘢·博白红糖鲜果酸（青云店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=17kiBb99g0as_qj3l3zosAI" class="shop-link">胜记小厨自选快餐.荷叶饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=-MYo2Mkja_0_sGl91MyRZgI" class="shop-link">三都李氏烧鸭粉（华展店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=wS0yK00IW4MxPMdxJEdlgQI" class="shop-link">桥底面馆</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=tWykcnpWe7DJXackM9yThwI" class="shop-link">破译蜜码CAKE(动物奶油·草莓生日蛋糕·柳南店）</a></div>
+                <!-- 江西省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=0dAS_NT0f49y_vxTzxdFtAI" class="shop-link">宜膳煌·遵义羊肉粉（信丰一清路店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=9aZQkiJm2ezxdlSCTJoFPAI" class="shop-link">爷爷不泡茶（赣州信丰铂金湾国光店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=-g-5ikf40SoGln6NUTFx9wI" class="shop-link">鲜找找（海鲜现捞·花雕大闸蟹）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=EVHQ7t1f6dkgRCd9-ipoOgI" class="shop-link">碳香记•淄博无烟烧烤</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=KpdDFYlsec8qYRLdP8x6YgI" class="shop-link">膳煲褔黄焖鸡米饭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=2MT020z_EhLDVxatGLKv_wI" class="shop-link">牛呢？炖了·探店·牛腩煲饭(江西南昌红谷现代城店)</a></div>
+                <!-- 辽宁省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=vPHTGrt9mQ71BMk5Ci6hoAI" class="shop-link">寻味辣道·鸡公煲</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=YOPsI5YFpKso0PG2-MpWmgI" class="shop-link">孙记北京烤鸭</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Dr4tnXlrR1iCL-k428kx_AI" class="shop-link">胖阿东老顺德干蒸菜</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=sDCOAST7gEioVyy0Nce-LgI" class="shop-link">娜福记沈阳鸡架</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Bdmr0zZAC15QvJNOD6VE0QI" class="shop-link">千层花卷破酥包</a></div>
+                <!-- 江苏省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=S1LxgX0df4F3fs47vdpu6QI" class="shop-link">一把青·螺蛳粉（星海广场北区店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=Rjf4H0HM7drzYDGGOgoiswI" class="shop-link">杏缘食坊(包子·馄饨·新北店)</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=pQkfNcDHzA7UTgDDY7mkYAI" class="shop-link">苏东官社区食堂（星悦里怡邻店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=LZ6It81_m7Nz7AaTauEc6QI" class="shop-link">水香蛋饼（软皮鸡蛋饼·吴中店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=5QVJ0_VYenM0oCaAFgHX4wI" class="shop-link">四禾山月·中式生日蛋糕木糖醇动物奶油冰淇淋（徐州店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=zlQiLL9Esd9L1Dko1JTxHAI" class="shop-link">彭记·广东肠粉</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=ZBwQqz3WROYiOfti3JQn4QI" class="shop-link">你瞅啥烤冷面（手抓饼.拌饼）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=LCmb_eMng12vop4sZaz-oQI" class="shop-link">牛13肥牛捞饭（加州店）</a></div>
+                <!-- 贵州省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=eczstzJCAFFej0WSuzN5sAI" class="shop-link">蓉城食堂·猛火爆炒（六盘水店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=yI64IwA0r2M_GhDrn27I4AI" class="shop-link">胖阿姨拌饭</a></div>
+                <!-- 内蒙古自治区 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=jLwOV886LcJYcurtohWDVwI" class="shop-link">夜涩成人生活馆（大学城店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=C2QzFVn9fhY6BkwM6v9CiwI" class="shop-link">甜啦啦（东胜区澳林花园店）</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=jotGtKv504Zxa1HDN8fgbQI" class="shop-link">柠檬向右(呼和浩特万象店)</a></div>
+                <!-- 海南省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=0sqgCE4Fe1vfEEWDxrGGXwI" class="shop-link">蟹黄逅.满黄红膏大闸蟹</a></div>
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=m-RpVDrxHnu-NiYcWFyAaQI" class="shop-link">蟹黄阁·红膏大闸蟹</a></div>
+                <!-- 甘肃省 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=u2zi1Giwv_FXJ82bcPzMPgI" class="shop-link">晚枫渔府（酸菜鱼）</a></div>
+                <!-- 天津市 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=fT4gc3w5VbLTXK8kKHrNJAI" class="shop-link">沙县小吃（金石南里店）</a></div>
+                <!-- 新疆维吾尔自治区 -->
+                <div class="shop-item"><a href="meituanwaimai://page/shop/menu?poiId=oquTZxCJNx0-JyfeAcE8gAI" class="shop-link">幸运咖（北郊客运站店）</a></div>
+                <!-- 青海省（无店铺，忽略） -->
+                <!-- 宁夏回族自治区（无店铺，忽略） -->
+                <!-- 西藏自治区（无店铺，忽略） -->
+            </div>
+        </div>
+
+        <!-- 操作提示 -->
+        <div class="tip">
+            🔔 使用说明：<br>
+            1. 请在 <span class="highlight">微信内打开本页面</span>，点击店铺名称直接唤起美团外卖小程序；<br>
+            2. 若未安装美团外卖小程序，微信会自动引导搜索，搜索后即可正常使用；<br>
+            3. 跳转后自动定位对应店铺，登录美团账号即可直接点餐；<br>
+            4. 店铺按省份分类，可通过手机浏览器「查找页面内容」快速搜索目标店铺。
+        </div>
+    </div>
+
+    <script>
+        // 检测是否在微信内打开
+        function isWeChat() {
+            return /MicroMessenger/i.test(navigator.userAgent);
+        }
+        // 页面加载提示
+        window.onload = function() {
+            if (!isWeChat()) {
+                alert("⚠️ 建议在微信内打开本页面，才能直接跳转美团外卖小程序哦～");
+            }
+        };
+    </script>
+</body>
+</html>
